@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gerard-obomby/static/css/main.1971e666.css",
-    "main.js": "/gerard-obomby/static/js/main.ca96112d.js",
+    "main.js": "/gerard-obomby/static/js/main.71cbed83.js",
     "static/js/787.1ed0c42c.chunk.js": "/gerard-obomby/static/js/787.1ed0c42c.chunk.js",
     "static/media/coverimage.jpeg": "/gerard-obomby/static/media/coverimage.4351790bc86aa56fcaaa.jpeg",
     "index.html": "/gerard-obomby/index.html",
     "main.1971e666.css.map": "/gerard-obomby/static/css/main.1971e666.css.map",
-    "main.ca96112d.js.map": "/gerard-obomby/static/js/main.ca96112d.js.map",
+    "main.71cbed83.js.map": "/gerard-obomby/static/js/main.71cbed83.js.map",
     "787.1ed0c42c.chunk.js.map": "/gerard-obomby/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1971e666.css",
-    "static/js/main.ca96112d.js"
+    "static/js/main.71cbed83.js"
   ]
 }
