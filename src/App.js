@@ -99,7 +99,7 @@ function App() {
 
       {/*about section*/}
       <div className='container-fluid about-section'>
-        <h2 style={{marginBottom: '62px'}} className='about-section_title text-center  mt-5'>I.<span className='about-section_title_colored'>ABOUT ME</span></h2>
+        <h1 style={{marginBottom: '62px'}} className='about-section_title text-center  mt-5'>I.<span className='about-section_title_colored'>ABOUT ME</span></h1>
         <div className='row gy-5'>
           <div className='col-md-4'>
             <div className='container'>
