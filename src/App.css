@@ -18,6 +18,13 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+}
+
+.span-color{
+    color: #F41F4E;
+}
 nav{
     height: fit-content;
     color: white;
@@ -339,3 +346,93 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Nouveau design */
+/* Sous ces lignes, je tacherai de garder une structure css bien propre pour me retrouver plus facilement. */
+
+/*
+    Header
+    --> Navbar 
+*/
+
+/*
+    Hero Section
+*/
+
+.hero-section{
+    margin-bottom: 6rem;
+}
+
+.hero-section .img{
+    width: 15rem;
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #f41f4e;
+    border-radius: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.circle-icon{
+    cursor: pointer;
+    background-color: #F41F4E;
+    color: #000;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: 0.5ms;
+}
+
+.circle-icon:hover{
+    cursor: pointer;
+    background-color: #000;
+    border: solid #fff 1px;
+    color: #000;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.circle-icon a{
+    color: #fff;
+}
+
+.circle-icon-2{
+    cursor: pointer;
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.circle-icon-2:hover{
+    cursor: pointer;
+    border: solid #fff 1px;
+    background-color: #F41F4E;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.circle-icon-2:hover a{
+    color: #fff;
+}
+
+.circle-icon-2 a{
+    color: #000;
+}
+

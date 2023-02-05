@@ -21,6 +21,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { db } from './firebase-config';
 import { addDoc, collection, getDocs } from 'firebase/firestore';
 import { render } from '@testing-library/react';
+import Header from './components/header'
 
 
 
@@ -55,21 +56,12 @@ function App() {
   
   return (
     <div className="App">
-      {/* navigation section */}
-      <nav className="navbar navbar-expand container mt-5 bg-black" style={{height: 'fit-content', color: 'white'}}>
-        <div className="container-fluid d-flex justify-content-between" style={{padding: '16px 10px'}}>
-          <a className="btn btn-danger " href="http://www.google.com" alt="link to google.com">Menu</a>
-          <a className="nav-link" href="http://www.google.com" alt="link to google.com">Gerard Obomby</a>
-          <a className="btn btn-danger" href="http://www.google.com" alt="link to google.com">Resume</a>
-        </div>
-      </nav>
-
-      {/* hero section */}
-      <div className="container hero" style={{height: 'fit-content'}}>
-        <div className='container text-light bg-dark d-flex align-items-center justify-content-center flex-column'style={{height: 'fit-content'}}>
-          <div className='round_image'></div>
-          <p className='text-center hello-txt' style={{fontSize:'xx-larger', marginTop: '2em'}}>
-            Hello, my name is 
+      <Header/>
+      <div className='container hero-section bg-dark text-center d-flex align-items-center justify-content-center flex-column text-light'>
+        <img src={coverImg} alt='profile' className='img'/>
+        <div  className='hero-section_body'>
+          <p className='hero-section_body-text' style={{fontSize: '28px'}}>
+            Hello, my name is
             <span style={{color: '#F41F4E', fontWeight: 'bold'}}>
               <Typewriter 
                 words={[' Gerard Obomby']}
@@ -81,24 +73,44 @@ function App() {
                 delaySpeed={1000}
               />
             </span>
+            <br/>
+            <span>
+              I'm a full-stack web developer based in Ghana
+            </span>
+            <br/>
+            <br/>
+            <div className='container d-flex justify-content-evenly mt-3'>
+              <span className='span-color'>Got a project?</span>
+              <a href='mailto:deoobomby@gmail.com' className='text-decoration-none btn btn-outline-danger'>Let's talk</a>
+            </div>
           </p><br/>
-
-          <p  className='hello-txt-1' style={{fontSize:'xxx-larger', textAlign: 'center'}}>I'm a full-stack web developer based in Ghana<br/> I build content and solutions for the web.</p>
-          <span style={{fontSize: '26px', color:'#F41F4E', marginBottom: '26px', marginTop: '82px'}}>Got a project? <a className='btn btn-danger ms-4'href='mailto:deoobomby@gmail.com'>Let's talk</a></span>
+          <div className='container d-flex justify-content-around align-items-center mb-5'>
+            <span className=' circle-icon'>
+              <a href='https://linkedin.com/in/gerardobomby'>
+                <i class="fa-brands fa-linkedin-in fa-2x"></i>
+              </a>             
+            </span>
+            <span className=' circle-icon-2'>
+              <a href='https://github.com/NeoLucem'>
+                <i class="fa-brands fa-github fa-2x"></i>
+              </a>             
+            </span>
+            <span className=' circle-icon'>
+              <a href='https://wa.me/+233561160094'>
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+              </a>             
+            </span>
+            <span className=' circle-icon-2'>
+              <a href='mailto:deoobomby@gmail.com'>
+                <i class="fa-sharp fa-solid fa-envelope fa-2x"></i>
+              </a>             
+            </span>
+          </div>
         </div>
       </div>
 
-      {/* social ads */}
-      <ul className='social_icon-container' style={{ width: 'fit-content'}}>
-        <li style={{marginRight: '24px'}}><a href='https://github.com/NeoLucem'><i class="fa-brands fa-github fa-2x text_colored-redpink"></i></a></li>
-                <li style={{marginRight: '24px'}}><a className='icon_link' href='https://linkedin.com/in/gerardobomby'><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
-                <li style={{marginRight: '24px'}}><a href='mailto:deoobomby@gmail.com'><i class="fa-sharp fa-solid fa-envelope fa-2x text_colored-redpink"></i></a></li>
-                <li style={{marginRight: '24px'}}><a className='icon_link' href='https://wa.me/+233561160094'><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
-      </ul>
-
-
       {/*about section*/}
-      <div className='container-fluid about-section'>
+      <div className='container-fluid about-section' id='about'>
         <h1 style={{marginBottom: '62px'}} className='about-section_title text-center  mt-5'>I.<span className='about-section_title_colored'>ABOUT ME</span></h1>
         <div className='row gy-5'>
           <div className='col-md-4'>
@@ -115,7 +127,7 @@ function App() {
           </div>
           <div className='col-md-6'>
             <p className='about_txt-1'>Hello, I’m a self taugh web developer based in Ghana.
-               I started this journey back in 2019 when I first discovered the infinite posssibility that IT world and the web provide
+               I started this journey back in 2019 when I first discovered the infinite possibility that IT world and the web provide.
             </p><br/>
             <p className='about_txt-2 text_colored-redpink'>
               Today I’m persuing a Bachelor in science of Information technology at BLUECREST UNIVERSITY COLLGE,
@@ -170,7 +182,7 @@ function App() {
       </div>
 
       {/* experience section */}
-      <div className="container-fluid experience-section" style={{marginTop: 0}}>
+      <div className="container-fluid experience-section" style={{marginTop: 0}} id='work'>
         <h2 className='text-center experience-section_title' style={{marginTop: 24}}><span className='experience-section_title_black'>II.</span>EXPERIENCE</h2>
         <h4 className='text-center experience-section_title-text'>This is a list of projects and experience accumulated</h4>
 
